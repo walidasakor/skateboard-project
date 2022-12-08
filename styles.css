@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;  
+    background: rgb(4, 7, 32);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.whole{  
+    border-radius: 10px;
+    padding: 40px;
+    height: 100vh;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.profile{
+    display: flex;
+    gap: 7px;
+}
+.profile > p{
+    margin-top: 10px;
+}
+.avi{
+    width: 50px;
+    aspect-ratio: 1;
+    margin-left: 50px;
+}
+input{
+    margin-right: 280px;
+    width: 40%;
+    height: 20%;
+    background: none;
+    border: 1px solid rgb(209, 216, 228);
+    border-radius: 8px;
+    padding: 12px;
+}
+button {
+    position: relative;
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  
+  .search {
+    position: absolute;
+    color: #fff;
+    fill: currentColor;
+    width: 60px;
+    height: 24px;
+    padding: 10px;
+  }
+.skater{
+    width: 50%;
+
+}
+
+main{
+    display: flex;
+   
+}
+.menu{
+    margin-right: 60px;
+    line-height: 4.0;
+    font-size: 16px;
+    color:hsl(219, 14%, 63%);
+    width: 20%;
+    height: 100%;
+}
+.toggle{
+    display: inline-block;
+    position: relative;
+    background: whitesmoke;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;  
+    cursor: pointer; 
+    transition: 0.4s; 
+    -webkit-transition: 0.4s;
+}
+.toggle.active{
+    background: rgb(30, 40, 143);
+}
+.toggle.active .indicator{
+    background: white;
+    left: 30px;
+}
+.indicator{
+    display: inline-block;
+    position: absolute;
+    background: rgb(30, 40, 143);
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+.mode{
+    margin-top: 40px;
+    display: flex;
+    gap: 8px;
+}
+#bnw{
+    font-size:10px;
+}
+
+.com{
+    border-bottom: 1px solid rgb(113, 119, 180);
+    padding-bottom: 40px;
+}
+.category{
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid rgb(113, 119, 180);
+    
+}
+.maincontent{
+    flex: 1 1 auto;
+    
+
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+.svg{
+    position: relative;
+    background: rgb(5, 9, 50);
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+    height: 20%;
+    margin-top: 20px;
+    
+}
+.svg > img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+}
+.top{
+    display: flex;
+    gap: 25px;
+    height: 40%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.bottom{
+    display: flex;
+    gap: 25px;
+    height: 45%;
+    margin-top: 20px;
+}
+.dot{
+    display: inline-block;
+    background: rgb(241, 176, 38);
+    width: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.box1{
+    background: rgb(70, 174, 206);
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    height: 100%;
+}
+.box-1-content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.box-1-whole{
+    display: flex;
+    justify-content: space-between;
+}
+.box2{
+    background-image: url("images/pexels-fabio-partenheimer-712395\ \(1\).jpg");
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.box-heading{
+    font-weight: bolder;
+    width: 50%;
+    margin-bottom: 50px;
+}
+.skater > img{
+    width: 100%;
+}
+.skater2{
+    position: absolute;
+    top: -50px;
+    right: -20px;
+
+}
+.box-info-all{
+    display: flex;
+    gap: 20px;
+}
+.avatar-profile-box2{
+    margin-top: 30px;
+}
+
+.avatar-profile{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 60px;
+    aspect-ratio: 1;
+    border: 1px solid white;
+    padding: 5px;
+}
+.avatar-profile > img{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%
+
+}
+.bottom-image > img{
+    position: relative;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.bottom-image{
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+   
+}
+.bottom-avatar-profile{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 60px;
+    aspect-ratio: 1;
+    border: 1px solid white;
+    padding: 5px;
+    bottom: -30px;
+    right: 15px;
+    float: right;
+}
+.bottom-avatar-profile > img{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%
+}
+
+.check{
+    position:absolute;
+    bottom:0;
+    right:0;
+    background: #3c60cd;
+    box-shadow: 0px 0px 1px 1px #00000001;
+    border-radius: 50%;
+    width: 25%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.check > img{
+    width:100%
+}
+.bottom-info{
+    padding: 20px;
+    font-size: 16px;
+    
+}
+.bottom-info > p{
+    color: hsl(219, 14%, 63%);;
+}
+.bottom-info > h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.box3, .box4, .box5, .box6{
+    background: rgb(5, 9, 50);
+    width: 25%;
+    border-radius: 20px;
+    
+}
+
+body.active{
+    background: white;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+body.active .whole{
+    color: #020716;
+}
+body.active .box1{
+    background: #a3d3db;
+}
+body.active .box2{
+    background: rgb(250, 114, 65);
+}
+body.active .box3{
+    background-color: #3c60cd;
+    
+}
+body.active .box4{
+    background: #3c60cd;
+    
+}
+body.active .box5{
+    background: #3c60cd;
+    
+}
+body.active .box6{
+    background: #3c60cd;
+    
+}
+body.active .bottom-info > p{
+    color: #020716;
+}
+body.active .dot{
+    background: rgb(179, 56, 12);
+}
